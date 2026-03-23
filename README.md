@@ -9,17 +9,17 @@ INTERNET
     |
 [ Internet Gateway ]
     |
-┌─────────── VPC: 10.0.0.0/16 ──────────────┐
+┌─────────── VPC: 10.0.0.0/16 ───────────────┐
 │  PUBLIC SUBNETS                            │
-│  [ public-1a: 10.0.1.0/24 ]               │
-│  [ public-1b: 10.0.2.0/24 ]               │
-│       | NAT GW (in public-1a)             │
-│  [ Application Load Balancer ]            │
-│       |                  |                │
-│  PRIVATE SUBNETS                          │
-│  [ private-1a: 10.0.3.0/24 ]             │
-│  [ private-1b: 10.0.4.0/24 ]             │
-│  [ EC2 App Server 1 ] [ EC2 App Server 2 ]│
+│  [ public-1a: 10.0.1.0/24 ]                │
+│  [ public-1b: 10.0.2.0/24 ]                │
+│       | NAT GW (in public-1a)              │
+│  [ Application Load Balancer ]             │
+│       |                  |                 │
+│  PRIVATE SUBNETS                           │
+│  [ private-1a: 10.0.3.0/24 ]               │
+│  [ private-1b: 10.0.4.0/24 ]               │
+│  [ EC2 App Server 1 ] [ EC2 App Server 2 ] │ 
 └────────────────────────────────────────────┘
 [ S3 Bucket: Terraform Remote State ]
 ```
